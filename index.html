@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahrdaya College Tour</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            min-height: 100%;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+
+        /* Animated background */
+        body {
+            background-image: url('https://digitalagencynetwork.com/wp-content/uploads/2023/07/how-will-ar-vr-headsets-affect-media-entertainment-industry-jpg.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            animation: zoomBackground 15s infinite alternate;
+            overflow-y: auto;
+        }
+        
+        /* Zoom animation for background */
+        @keyframes zoomBackground {
+            0% { background-size: 100%; }
+            100% { background-size: 105%; }
+        }
+
+        /* Overlay for readability */
+        .overlay {
+            min-height: 100vh;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        /* Main container */
+        .container {
+            pointer-events: auto;
+        }
+
+        /* Slide-in animation for the text */
+        .typewriter h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            background: linear-gradient(to right, #d400ff, #eecc09);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px rgba(255, 106, 0, 0.7), 0 0 15px rgba(9, 238, 188, 0.7);
+            animation: slideIn 1.5s ease-out forwards;
+        }
+
+        /* Slide-in keyframes */
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Button styling with glowing effect */
+        .button {
+            padding: 15px 40px;
+            margin: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: linear-gradient(to right, #d400ff, #eecc09);
+            border: none;
+            border-radius: 30px;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 15px rgba(255, 106, 0, 0.7), 0 0 15px rgba(9, 238, 188, 0.7);
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 1px;
+        }
+        .button:hover {
+            background: linear-gradient(to right, #17c4f0, #78e0d2, #c0b0c7);
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(71, 180, 219, 0.8), 0 12px 30px rgba(226, 5, 61, 0.8), 0 12px 35px rgba(142, 68, 173, 0.8);
+            filter: brightness(1.1);
+        }
+
+        .button:active {
+            transform: translateY(-2px);
+        }
+
+        /* Project Info Styling */
+        .project-info {
+            padding: 20px;
+            z-index: 2;
+            margin: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .project-info h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #eecc09;
+            text-shadow: 0 0 10px rgba(255, 106, 0, 0.7);
+        }
+
+        .project-info p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .project-info ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding: 10px 0;
+        }
+
+        .project-info ul li {
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .project-info strong {
+            color: #eecc09;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <div class="typewriter">
+                <h2>Welcome to Sahrdaya College Tour</h2>
+            </div>
+            <div class="button-container">
+                <a href="ar.html" class="button">Explore AR</a>
+                <a href="vr.html" class="button">Explore VR</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- New Content Section -->
+    <div class="project-info">
+        <h3>Project Overview</h3>
+        <p>
+            This project is a virtual tour application for Sahrdaya College, designed to provide an immersive experience through Augmented Reality (AR) and Virtual Reality (VR) technologies. Users can explore various aspects of the college environment from the comfort of their homes, enhancing engagement and interest in the college.
+        </p>
+        <h3>Report a Bug</h3>
+        <p>
+            If you encounter any issues while using this application, please report them to our development team. Your feedback is essential in helping us improve the user experience.
+        </p>
+        <p>
+            <strong>Contact:</strong> support@sahrdaya.ac.in
+        </p>
+        <h3>Project Contributors</h3>
+        <p>This project was developed by a dedicated team of professionals, including:</p>
+        <ul>
+            <li><strong>savio:</strong> AR Developer</li>
+            <li><strong>ameen:</strong> VR Developer</li>
+            <li><strong>Alkesh:</strong> UI/UX Designer</li>
+            <li><strong>Leo:</strong> Backend Developer</li>
+        </ul>
+    </div>
+</body>
+</html>
